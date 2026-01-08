@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+
+.navelements{
+    display: flex;
+    padding: 10px;
+}
+
+.navbar a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.sidebaricon{
+    font-size: 20px;
+    display: block;
+    cursor:pointer;
+    display:none;
+
+}
+.sidebar{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    z-index: 2;
+    position:fixed;
+    top:0;
+    left:-60%;
+    transition:1s;
+}
+.sidebarelements{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.sidebar h2{
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.sidebarelements a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+}
+.header{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.headerelements{
+    padding:20px;
+}
+.header button{
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 5px;
+}
+.aboutus{
+    margin-left: 20px;
+}
+.boxes{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.box{
+    background-color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis:20%;
+}
+.collections h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.latest h3{
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left:20px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.image:hover{
+    height:180px;
+}
+.image{
+    margin:20px;
+    border-radius: 40px;
+}
+.footer{
+    background-color: aqua;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.search{
+    margin-top:100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+div{
+    align-items: center;
+}
+
+input{
+    width:80%;
+    height:24px;
+}
+input:focus{
+    outline: none;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    height:400px;
+    margin-left: 20%;
+    background-color: aqua;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding:40px;
+    border-radius: 30px;
+}
+.form input{
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    width: 80%;
+}
+.form textarea{
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    width: 80%;
+}
+.form input,textarea:focus{
+    outline:none;
+}
+.form button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+@media screen and (max-width:600px) {
+    .sidebaricon{
+        display: block;
+    }
+    .navelements{
+        display:none;
+    }
+    .boxes{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .box{
+        margin-top: 15px;
+    }
+}
